@@ -7,7 +7,7 @@ A. Model conversion from Caffe to Tensorflow using tf.keras
 ```apt install caffe-cpu```
 
 2. Run the follwing command to get the weight converter (caffe-keras) file. 
-!wget  https://raw.githubusercontent.com/pierluigiferrari/caffe_weight_converter/master/caffe_weight_converter.py
+```wget  https://raw.githubusercontent.com/pierluigiferrari/caffe_weight_converter/master/caffe_weight_converter.py```
 
 I have included the caffe_weight_converter.py file as well in the folder. I got this code from https://github.com/pierluigiferrari/caffe_weight_converter.
 
