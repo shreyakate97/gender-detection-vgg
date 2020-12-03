@@ -4,22 +4,25 @@ Gender detection using transfer learning
 A. Model conversion from Caffe to Tensorflow using tf.keras
 
 1. Install Caffe using the following command
-!apt install caffe-cpu
+```apt install caffe-cpu```
 
 2. Run the follwing command to get the weight converter (caffe-keras) file. 
 !wget  https://raw.githubusercontent.com/pierluigiferrari/caffe_weight_converter/master/caffe_weight_converter.py
 
 I have included the caffe_weight_converter.py file as well in the folder. I got this code from https://github.com/pierluigiferrari/caffe_weight_converter.
 
+Download VGG_FACE.caffemodel and VGG_FACE_deploy.prototxt from http://www.robots.ox.ac.uk/~vgg/software/vgg_face/
+
 3. Run model_conversion.py to get the contents of VGG_FACE_deploy.prototxt file and view the neural network architecture information in it.
 
 4. Run the following command to store the weights from VGG_FACE.caffemodel in keras_weights.h5 file 
 
-!python caffe_weight_converter.py 'keras_weights' \
+```
+python caffe_weight_converter.py 'keras_weights' \
                                  'VGG_FACE_deploy.prototxt' \
                                  'VGG_FACE.caffemodel' \
                                  --verbose
-
+```
 6. The weights have been saved in keras_weights.h5. I have uploaded this file in the folder. 
 ##################################################################################################################
 B. Transfer Learning- Create, Train and Evaluate model : model_trainandeval.py
