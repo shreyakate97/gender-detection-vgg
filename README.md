@@ -24,7 +24,7 @@ python caffe_weight_converter.py 'keras_weights' \
                                  --verbose
 ```
 6. The weights have been saved in keras_weights.h5. I have uploaded this file in the folder. 
-##################################################################################################################
+
 B. Transfer Learning- Create, Train and Evaluate model : model_trainandeval.py
 I have used the above CNN as a feature descriptor to build a classifier for the gender dataset.
 
